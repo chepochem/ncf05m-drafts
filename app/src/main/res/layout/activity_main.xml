@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <FrameLayout
+        android:layout_width="280dp"
+        android:layout_height="280dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <Button
+            android:id="@+id/top_left"
+            android:layout_width="140dp"
+            android:layout_height="140dp"
+            android:layout_gravity="top|start"
+            android:background="@drawable/rect_black_stoke_40dp"
+            android:onClick="onLeftTopClick" />
+
+        <Button
+            android:id="@+id/top_right"
+            android:layout_width="140dp"
+            android:layout_height="140dp"
+            android:layout_gravity="top|end"
+            android:background="@drawable/rect_black_stoke_40dp" />
+
+        <Button
+            android:id="@+id/bottom_left"
+            android:layout_width="140dp"
+            android:layout_height="140dp"
+            android:layout_gravity="bottom|start"
+            android:background="@drawable/rect_black_stoke_40dp" />
+
+        <Button
+            android:id="@+id/bottom_right"
+            android:layout_width="140dp"
+            android:layout_height="140dp"
+            android:layout_gravity="bottom|end"
+            android:background="@drawable/rect_black_stoke_40dp" />
+
+        <Button
+            android:id="@+id/center"
+            android:layout_width="140dp"
+            android:layout_height="140dp"
+            android:layout_gravity="center"
+            android:background="@drawable/circle_black_stroke_40dp" />
+    </FrameLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
